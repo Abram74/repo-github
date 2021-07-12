@@ -1,0 +1,147 @@
+.registration{
+    display:flex;
+    margin-top: 66px;
+    justify-content: space-between;
+}
+
+.checkbox-flex{
+    display: flex;
+}
+
+.reg-data{
+font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+color: #222222;
+margin-bottom: 20px;
+}
+
+.registration-form .browseAllProductsButton{
+margin: 40px 0;
+background-color: $main-pink;
+color: white;
+width: 167px;
+height: 50px;
+&:hover{
+    background-color: white;
+    color: $main-pink;   
+}
+&:hover .long-arrow-right{
+    fill: $main-pink;   
+}
+
+}
+
+.registration-form .cart__shipping-address__form__input::placeholder{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    
+    color: #B1B1B1;
+    
+}
+
+.registration-form{
+    width: 360px;
+}
+
+.checkbox-flex{
+    margin-bottom: 33px;
+}
+
+.checkbox{
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.long-arrow-right{
+    fill: white;
+
+}
+
+.loyalty-perks{
+list-style-type: none;
+}
+
+
+.perks{
+    position: relative;
+    margin-left: 45px;
+    
+}
+.perks::before{
+    position: absolute;
+    content:"";
+    background-image: url("../img/checked-sign.svg");
+    width: 20px;
+    height: 16px;
+    margin-left: -45px;
+    
+}
+
+
+.loyalty-heading{
+    
+font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin-bottom: 22px;
+}
+
+.perks, .perks-intro{
+    font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin-bottom: 16px;
+}
+
+.loyalty-programm{
+    width: 640px;
+    margin-left: 20px;
+}
+
+.password-info{
+    font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+
+color: #B1B1B1;
+}
+
+
+.reg-label{
+    font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 11px;
+line-height: 13px;
+color: #000000;
+margin-right: 10px;
+}
+
+@media (max-width: 768px){
+    .loyalty-programm{
+        width: 354px;
+    }
+}
+
+@media (max-width: 700px){
+    .registration{
+        flex-direction: column;
+        align-items: center;
+    }
+}

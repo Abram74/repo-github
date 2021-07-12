@@ -1,0 +1,43 @@
+.image{
+    width: 100px;
+}
+.burgers-div{
+  
+    display:flex;
+    justify-content: space-around;
+}
+.burger{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 15px;
+    background: green;
+  &:hover{
+      cursor: pointer;
+    transform: scale(2);
+    transition: 0.4s;
+  }
+  
+}
+.burger-chosen{
+    transform: scale(2);
+}
+.calc{
+    background-color: green;
+}
+.main{
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.topping, .stuffing{
+    &:hover{
+        color:gold;
+        cursor: pointer;
+    }
+}

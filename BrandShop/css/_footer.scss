@@ -1,0 +1,64 @@
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    &Back{
+        min-height: 78px;
+        background: #222224;
+    }
+    }
+    
+    .rightsText{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    }
+
+    .social{
+        &Block{
+      background-color: white;
+      width:32px;
+      height:32px;
+      margin-left: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+      &:hover{
+        background-color: $main-pink;
+      }
+      &:hover .color{
+        color:white;
+      }
+    }
+    &Media{
+        display: flex;
+    }
+    }
+
+    .color{
+      color:black;
+    }
+
+    .social-ref{
+      text-decoration: none;
+    }
+
+
+    @media (max-width:375px){
+      .bottom{
+      flex-direction: column-reverse;
+    align-items: center;
+    }
+    .socialMedia{
+      margin-bottom: 40px;
+    }
+
+    .rightsText{
+      margin-bottom: 10px;
+    }
+  }

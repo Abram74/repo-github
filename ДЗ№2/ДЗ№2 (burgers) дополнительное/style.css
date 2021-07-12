@@ -1,0 +1,55 @@
+.image {
+  width: 100px;
+}
+
+.burgers-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.burger {
+  border: 1px solid black;
+  text-align: center;
+  margin-left: 15px;
+  background: green;
+}
+
+.burger:hover {
+  cursor: pointer;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.burger-chosen {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.calc {
+  background-color: green;
+}
+
+.main {
+  margin-top: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.hidden {
+  display: none;
+}
+
+.topping:hover, .stuffing:hover {
+  color: gold;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

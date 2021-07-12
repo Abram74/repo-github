@@ -1,0 +1,116 @@
+.featured_items{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.items{
+    margin-top: 45px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.featItems{
+    &Heading{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  margin-bottom: 15px;
+    }
+    &Text{
+      font-weight: normal;
+      @include font_14_17;
+      color: #9F9F9F;
+    }
+  
+}
+
+.item{
+    &Heading{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  padding-left:18px;
+  margin-top: 25px;
+    }
+    &Description{
+      font-weight: 300;
+      @include font_14_17;
+      color: #5D5D5D;
+      margin-top: 12px;
+      margin-bottom: 18px;
+      padding-left:18px;
+    }
+}
+
+
+.blockOfFeaturedItems{
+    width: 360px;
+    margin-bottom: 30px;
+    background: #F8F8F8;
+    text-align: start;
+    position: relative;
+    overflow: hidden;
+  
+    &:hover .overlay-mask{
+      top:0px;
+    }
+}
+
+.overlay-mask{
+  height: 420px;
+  width:100%;
+  left:0px;
+  top:-420px;
+  position:absolute;
+  background-color: rgba(58, 56, 56, 0.86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.overlay-btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+padding-left: 14px;
+padding-right: 14px;
+  width:139px;
+  height: 44px;
+  font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+border: 1px solid white;
+background: none;
+transition: 0.4s;
+&:hover{
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+&:hover .addToCart{
+  fill:black;
+}
+}
+
+.overlay-btn .addToCart{
+  fill: white;
+}
+
+
+@media (max-width: 768px){
+ .blockOfFeaturedItems:last-child{
+display: none;
+ } 
+}

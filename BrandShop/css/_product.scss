@@ -1,0 +1,136 @@
+.pageChanger{
+    display:flex;
+    border: 1px solid #C4C4C4;
+    width: 285px;
+    height: 45px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 95px;
+    &Button{
+        border: none;
+        background-color: white;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #C4C4C4;
+        &:hover{
+            color: $main-pink;
+        }
+    }
+   
+  }
+
+  .pageChangerFigures{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    &:hover{
+        color: $main-pink;
+    }
+  }
+
+  .slider{
+    display: flex;
+   
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    &Button{
+        width:50px;
+        height:50px;
+        position: absolute;
+       border: none;
+       background: rgba(42, 42, 42, 0.15);
+       width: 47px;
+       height: 47px;
+       &Left{
+        left:5px;
+       }
+       &Right{
+        right:5px;
+       }
+    }
+  }
+
+  .image{
+    width:100%;
+  }
+  
+.productArrow{
+  fill:black;
+  &:hover{
+    fill: $main-pink;
+  }
+}
+
+.item_description{
+  text-align: center;
+  position: relative;
+  margin-top: -45px;
+  border: 1px solid grey;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white; 
+  margin-bottom: 128px; 
+  &_heading_top{
+    font-weight: 300;
+    @include font_14_17;
+    color: $main-pink;
+    margin-top: 65px;
+    margin-bottom: 25px;
+  }
+  &_heading_bottom{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-top: 12px;
+    margin-bottom: 48px;
+  }
+  &_text{
+    font-weight: 300;
+    @include font_14_17;
+    text-align: center;
+    color: #5E5E5E;
+    max-width:555px;
+  }
+  &_price{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    margin-top: 32px;
+
+  }
+}
+
+.line{
+  width: 64px;
+  border:0;
+  margin:0;
+  height:2px;
+  background:$main-pink;
+}
+
+.item_description_line{
+  border: 1px solid #EAEAEA;
+width: 80%;
+margin-top: 65px;
+margin-bottom: 65px;
+}
+
+.img-slide, .img-slide-tablet{
+  width: 100%;
+}
+

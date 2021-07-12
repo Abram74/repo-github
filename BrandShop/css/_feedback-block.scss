@@ -1,0 +1,138 @@
+.feedback{
+    padding-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    &Back{
+    min-height: 450px;
+     background-image: url(../img/feedbackBack.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    }
+}
+
+.comment{
+    width: 360px;
+text-align: center;
+&Text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+}
+
+
+.subscribe{
+    max-width: 557px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribeHeading{
+    &Top{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+    }
+    &Bottom{
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 30.1px;
+      text-align: center;
+      color: #222224; 
+    }
+}
+
+.subscribeForm{
+    display:flex;
+    margin-top: 32px;
+  }
+  
+  .subBut{
+  
+  border:none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:20px;
+  background: $main-pink;
+  cursor:pointer;
+  font-weight: normal;
+  @include font_14_17;
+  color: #FFFFFF;
+  transition: 0.4s;
+  width:100px;
+  height:49px;
+  &:hover{
+    background: red;
+  }
+  }
+  
+  
+  .userEmail{
+    border: none;
+    background:#E1E1E1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  padding-left:20px;
+  width:256px;
+  height: 49px;
+  box-sizing: border-box;
+  &:focus{
+    border:none;
+    outline:none;
+  }
+  &::placeholder{
+    padding-left:10px;
+    font-weight: normal;
+    @include font_14_17;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+  }
+}
+
+@media (max-width: 768px){
+  .feedback{
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe{
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+ 
+}
+
+@media (max-width: 360px){
+ 
+  .comment, .subscribe, .subscribeForm{
+    width: 315px;
+  }
+  
+}
+
+@media (max-width: 375px){
+  .commentText{
+    font-size: 18px;
+line-height: 22px;
+  }
+  .subscribeHeadingTop{
+    line-height: 153.2%;
+  }
+  .subscribeHeadingBottom{
+    font-size: 14px;
+line-height: 153.2%;
+  }
+}

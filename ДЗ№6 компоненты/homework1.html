@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>eShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class=main-container id="app">
+        <header class="top-menu">
+            <search-bar></search-bar>
+            <vue-cart></vue-cart>
+        </header>
+        <main>
+            <goods-list :goods="filteredGoods"></goods-list>
+            <!-- <div class="goods-list">
+                <div class="goods-item" v-for="good in filteredGoods">
+                    <h3 class="product-name">{{ good.product_name }}</h3>
+                    <p class="product-price">{{ good.price }}</p>
+                    <button class="cart-button" type="button" v-on:click="toCart($event)">Купить</button>
+                </div>
+            </div> -->
+        </main>
+    </div>
+
+    <!-- <form class="form" action="#">
+        <input class="name" type="text">
+        <input class="phone" type="text">
+        <input class="mail" type="text">
+        <input type="text">
+        <button class="btn">Отправить</button>
+    </form> -->
+
+    <!-- <p class="dialogue">'Let go of your fears.' he replied.
+        'Write from your heart' she stated. 'It's the best way to reach the reader.'</p> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

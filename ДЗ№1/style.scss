@@ -1,0 +1,31 @@
+.top-menu{
+background-color: rgb(59, 168, 104);
+display: flex;
+justify-content: end;
+}
+
+.cart-button{
+    background: white;
+    border: none;
+    margin: 10px 20px 10px 0px;
+    border-radius: 5px;
+    color: rgb(9, 54, 28);
+    &:hover{
+        background: rgb(9, 54, 28);; 
+        color:white;
+        cursor: pointer;
+    }
+}
+
+.goods-item{
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+}
+
+.goods-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}

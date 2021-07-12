@@ -1,0 +1,31 @@
+.header{
+    background-color: #222;
+    min-height: 75px;
+}
+
+.top-flex{
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 75px;
+    
+      &-right{
+        display: flex;
+        justify-content: space-between;
+        min-width: 170px;
+        align-items: center;
+      }
+    
+      &-left{
+        display:flex;
+        justify-content: space-between;
+        min-width: 110px;
+        align-items:center;
+      }
+    }
+
+    @media (max-width: 375px){
+      .header-right{
+        flex-direction: row-reverse;
+      }
+    }

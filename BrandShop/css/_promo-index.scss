@@ -1,0 +1,124 @@
+.promo{
+    position: relative;
+    max-height:764px;
+    &-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-left,&-right{
+        max-width: 570px;
+    }
+    &_text{
+        margin-top: 290px;
+        display: flex;
+        margin-right: 76px;
+    }
+    &_moto{
+        margin-left: 10px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.4px;
+        color: #222222;
+    }
+}
+
+.video{
+  position: absolute;
+  height:100%;
+  width:100%;
+  z-index:-1;
+  object-fit: cover;
+}
+
+.rect{
+    height: 100%;
+}
+
+.brand{
+font-weight: 900;
+font-size: 48px;
+line-height: 57.6px;
+
+}
+
+.heading_red{
+    color: $main-pink;
+}
+
+
+@media (max-width: 905px){
+    .promo_moto{
+        font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #222222;
+    }
+
+    .brand{
+        font-family: Lato;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 53px;
+
+color: #222222;
+    }
+.promo_text{
+    margin-right: 0px;
+}
+   
+}
+
+@media (max-width:768px){
+    .video{
+        display: none;
+    }
+.promo{
+    background-color: #F1E4E6;
+    max-height: 367px;
+}
+.promo_text{
+    margin-top: 150px;
+}
+.promo-flex{
+    justify-content: center;
+}
+}
+
+@media (max-width:530px){
+    .promo_moto{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        
+        color: #222222;
+    }
+    .brand{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 46px;
+        
+        color: #222222;
+    }
+}
+
+@media (max-width: 490px){
+    .promo-img{
+display: none;
+    }
+    .promo_text{
+        margin-top: 50px;
+    margin-bottom: 50px;
+    }
+}
+
+

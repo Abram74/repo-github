@@ -1,0 +1,170 @@
+.categories{
+    margin-top: 65px; 
+ }
+ 
+ .for{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+ 
+ .accesories{
+     margin-top: 30px;
+ }
+
+ .blockFor{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 31.6%;
+    height: 260px;
+    background: rgba(33, 22, 22, 0.7);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px){
+  .blockFor{
+    
+    height: 167px;
+  }
+}
+
+  .for-women{
+      background-image: url(../img/forWomen.jpg);
+      position: relative;
+      transition: 0.4s;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+        z-index: 1;
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+  
+    }
+
+  .for-men{
+      background-image: url(../img/forMen.jpg);
+      position: relative;
+      transition: 0.4s;
+     
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+        z-index: 1;
+      }
+      &:hover{
+        transform: scale(1.1);
+        
+      }
+  }
+
+  .for-kids{
+      background-image: url(../img/forKids.jpg);
+      position: relative;
+      transition: 0.4s;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+        z-index: 1;
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+     
+  }
+
+  .accesories{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 180px;
+      width: 100%;
+      background: rgba(33, 22, 22, 0.7);
+      background-image: url(../img/accesories.jpg);
+      position: relative;
+      transition: 0.4s;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+        z-index: 1;
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+
+  .categories{
+      &-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index:2;
+      }
+      &-heading{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $main-pink;
+        z-index:2;
+      }
+  }
+
+
+  @media (max-width: 768px){
+
+    .categories{
+      margin-top: 20px; 
+   }
+  }
+
+
+  @media (max-width: 375px){
+    .for{
+      flex-direction: column;
+    }
+    .blockFor{
+      width:100%;
+      margin-bottom: 35px;
+      background-position: top;
+    }
+    .accesories{
+      margin-top: 0px;
+    }
+
+  }
